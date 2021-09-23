@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Muebles - Contacto</title>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="nombre-sitio">Tienda Muebles <span> VINKE </span></h1>
+    </header>
+    <div class="contenedor-navegacion">
+      <nav class="nav-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="Nosotros.html">Nosotros</a>
+        <a href="Tienda.html">Tienda</a>
+        <a href="Blog.html">Blog</a>
+        <a href="Galeria.html">Galeria</a>
+        <a href="Contacto.html">Contacto</a>
+      </nav>
+    </div>
+
+    <main class="contenido-principal contenedor">
+      <h2 class="text-center">Contacto</h2>
+      <form class="formulario">
+        <fieldset>
+          <legend>Datos</legend>
+          <div class="campo">
+            <label for="Nombre">Nombre</label>
+            <input
+              id="Nombre"
+              type="text"
+              placeholder="Introducir Nombre"
+              required
+            />
+          </div>
+          <div class="campo">
+            <label for="Asunto">Asunto</label>
+            <input
+              id="Asunto"
+              type="text"
+              placeholder="Introducir Asunto"
+              required
+            />
+          </div>
+          <div class="campo">
+            <label for="Email">Email</label>
+            <input
+              id="Email"
+              type="email"
+              placeholder="Introducir Email"
+              required
+            />
+          </div>
+          <div class="campo">
+            <label for="Telefono">Telefono</label>
+            <input
+              id="Telefono"
+              type="number"
+              placeholder="Introducir Telefono"
+              required
+            />
+          </div>
+          <div class="campo">
+            <label for="Mensaje">Mensaje</label>
+            <textarea name="" id="Mensaje" cols="30" rows="10"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>País</legend>
+          <div class="campo">
+            <label for="Pais">País</label>
+            <select id="Pais">
+              <option value="">-- Seleccionar --</option>
+              <option value="AR">Argentina</option>
+              <option value="BR">Brasil</option>
+              <option value="CL">Chile</option>
+              <option value="CO">Colombia</option>
+              <option value="PR">Paraguay</option>
+              <option value="PE">Peru</option>
+              <option value="UR">Uruguay</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Información Extra</legend>
+          <div class="campo">
+            <label for="Cliente">Cliente</label>
+            <input id="Cliente" type="radio" name="tipo" value="Cliente" />
+          </div>
+          <div class="campo">
+            <label for="Proveedor">Proveedor</label>
+            <input id="Proveedor" type="radio" name="tipo" value="Proveedor" />
+          </div>
+          <div class="campo">
+            <label for="Categoria">Categoria de interes</label>
+            <input list="Categorias" name="Categorias" />
+            <datalist id="Categorias">
+              <option value="Cocina"> </option>
+              <option value="exteriores"> </option>
+              <option value="Jardin"></option>
+              <option value="interiores"></option>
+              <option value="Television"></option>
+            </datalist>
+          </div>
+        </fieldset>
+        <input class="btn" type="submit" value="Enviar formulario" />
+      </form>
+    </main>
+
+    <footer class="footer contenedor">
+      <div class="footer__grid">
+        <div class="footer__text">
+          <h3>Categorías</h3>
+          <nav class="footer__nav">
+            <a href="#">Cocina</a>
+            <a href="#">Oficina</a>
+            <a href="#">Jardin</a>
+            <a href="#">Garage</a>
+            <a href="#">Dormitorios</a>
+          </nav>
+        </div>
+        <div class="footer__text">
+          <h3>Sobre Nosotros</h3>
+          <nav class="footer__nav">
+            <a href="#">Nuestra historia</a>
+            <a href="#">Misión, Visión y Valores</a>
+            <a href="#">Carreras</a>
+            <a href="#">Politica de privacidad</a>
+            <a href="#">Terminos de servicio</a>
+          </nav>
+        </div>
+        <div class="footer__text">
+          <h3>Soporte</h3>
+          <nav class="footer__nav">
+            <a href="#">Pregunta frecuentes</a>
+            <a href="#">Ayuda en linea </a>
+            <a href="#">Confianza y seguridad</a>
+          </nav>
+        </div>
+      </div>
+
+      <p class="footer__center footer__text">
+        Todos los derechos reservados vinke sociedad anonima
+      </p>
+    </footer>
+  </body>
+</html>
